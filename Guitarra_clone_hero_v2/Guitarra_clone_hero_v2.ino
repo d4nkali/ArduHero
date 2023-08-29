@@ -26,9 +26,9 @@ void setup() { // Progrmação inicial
 
   Keyboard.begin();   // Inicializar a comunicação da placa com o computador
 
-  for (int i = 0; i < num_botao; i++) { // Configura os botões como entradas
+  for (int i = 0; i < num_botao; i++) { 
 
-    pinMode(botao_pin[i], INPUT_PULLUP);
+    pinMode(botao_pin[i], INPUT_PULLUP); // Configura os botões como entradas
 
   }
 
@@ -36,9 +36,9 @@ void setup() { // Progrmação inicial
 
 void loop() { // Programação principal
 
-  for (int i = 0; i < num_botao; i++) { // Ler o estado de cada botão
+  for (int i = 0; i < num_botao; i++) { 
 
-    bool buttonPressed = digitalRead(botao_pin[i]) == LOW;
+    bool buttonPressed = digitalRead(botao_pin[i]) == LOW; // Ler o estado de cada botão
 
     if (buttonPressed && !buttonStates[i]) { // Se o botão foi pressionado, então:
 

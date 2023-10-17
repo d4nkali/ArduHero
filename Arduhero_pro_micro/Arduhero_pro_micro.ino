@@ -8,7 +8,7 @@
 
  // Pinos utilizados pelos botões
 
-   const int botao_pin[] = {12, 11, 10, 9, 8, 7, 6, 5};
+   const int botao_pin[] = {15, 14, 16, 10, 9, 8, 7, 6};
 
  // Teclas correspondentes aos botões
 
@@ -26,9 +26,9 @@ void setup() { // Progrmação inicial
 
   Keyboard.begin();   // Inicializar a comunicação da placa com o computador
 
-  for (int i = 0; i < num_botao; i++) { 
+  for (int i = 0; i < num_botao; i++) { // Configura os botões como entradas
 
-    pinMode(botao_pin[i], INPUT_PULLUP); // Configura os botões como entradas
+    pinMode(botao_pin[i], INPUT_PULLUP);
 
   }
 
@@ -36,9 +36,9 @@ void setup() { // Progrmação inicial
 
 void loop() { // Programação principal
 
-  for (int i = 0; i < num_botao; i++) { 
+  for (int i = 0; i < num_botao; i++) { // Ler o estado de cada botão
 
-    bool buttonPressed = digitalRead(botao_pin[i]) == LOW; // Ler o estado de cada botão
+    bool buttonPressed = digitalRead(botao_pin[i]) == LOW;
 
     if (buttonPressed && !buttonStates[i]) { // Se o botão foi pressionado, então:
 

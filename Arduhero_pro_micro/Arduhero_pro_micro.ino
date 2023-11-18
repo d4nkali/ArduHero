@@ -1,8 +1,14 @@
-// Programa Guitarra para o Clone Hero no PC usando Arduino Pro Mini
+/*
+
+  Programa Guitarra para o Clone Hero no PC usando Arduino Pro Mini
+  Autor: d4nkali
+  Data: 18/11/2023
+
+*/
 
 // Inclusão da biblioteca
 
- #include <Keyboard.h>
+  #include <Keyboard.h>
 
 //Definição das variaveis
 

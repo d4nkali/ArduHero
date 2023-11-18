@@ -1,4 +1,10 @@
-// Programa Guitarra para o Clone Hero no PC usando Arduino Leornado
+/*
+
+  Programa Guitarra para o Clone Hero no PC usando Arduino Leornado
+  Autor: d4nkali
+  Data: 13/11/2023
+
+*/
 
 // Inclusão da biblioteca
 
